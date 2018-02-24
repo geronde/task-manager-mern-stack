@@ -64,6 +64,6 @@ For Development, run:
 
 
 ## Demo
-This is a [simple demo](https://mern-stack-project.herokuapp.com/)
+[Demo of the app](https://mern-stack-project.herokuapp.com/)
 
 **Note: In the demo, the database is locked in read mode only. So making any CUD(create-update-delete) operations isn't possible in this demo.** 
