@@ -1,0 +1,21 @@
+var app = require('../server/apiServer')
+var path= require("path")
+var express = require('express')
+var history = require('connect-history-api-fallback');
+
+
+//Serve App 
+     
+      var DIST_DIR     = path.join(__dirname, "../build"),
+          HTML_FILE    = path.join(DIST_DIR, "index.html"),
+          PORT         = 3000;
+
+
+      app.use(history());
+      app.set("port", process.env.PORT || PORT);
+      app.use(express.static(DIST_DIR));
+      app.get("*", (req, res) => res.sendFile(HTML_FILE));
+
+app.listen(PORT, function(){
+	console.log('listening to port: '+PORT)
+})

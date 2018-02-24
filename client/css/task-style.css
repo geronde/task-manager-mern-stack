@@ -1,0 +1,149 @@
+/*
+Tasks style
+*/
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.tasks {
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    width: 92%;
+    padding: 10px 0;
+    margin: 7px auto;
+    background-color: #fefefe;
+    position: relative;
+    box-shadow: 0 2px 1px -1px #777;
+}
+
+.task:hover {
+    cursor: pointer;
+    background-color: #f8f8f8;
+    position: relative;
+    box-shadow: none;
+}
+
+.task-info {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 88;
+}
+
+.task-info h4 {
+    font-size: 0.7em;
+    padding: 5px;
+    width: 90%;
+    word-wrap: break-word;
+}
+
+
+/*
+Create task form
+*/
+
+.create-task-form-container {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.create-task-form {
+    margin: 5px 0;
+}
+
+.create-task-form input[type="text"] {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+}
+
+.create-task-form input[type="text"]:focus {
+    background-color: #fefefe;
+    width: 100%;
+    border: none;
+    padding: 8px 2px;
+    font-size: 0.75em;
+}
+
+
+/*
+Task Options
+*/
+
+.options-button-container {
+    width: 13px;
+    height: 13px;
+    margin: 5px;
+    position: relative;
+}
+
+.options-button {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    height: 0;
+    padding: 0px;
+    padding-bottom: 100%;
+    background-color: transparent;
+    background-image: url('../img/show-options.svg');
+}
+
+.options-container:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+.options-container {
+    position: relative;
+    height: 100%;
+}
+
+
+/*	
+Edit task form
+*/
+
+.edit-task-container {
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-task {
+    width: 100%;
+}
+
+.edit-task input[type="text"] {
+    width: 230px;
+    border: 1px solid #cdcdcd;
+    padding-left: 2px;
+    padding-bottom: 30px;
+}
+
+.options {
+    padding-left: 1rem;
+}
+
+.options>* {
+    margin: 2.5px;
+}
+
+.options>*:hover {
+    opacity: 0.75;
+}
+
+.edit-focus:focus {
+    background-color: lightskyblue;
+}

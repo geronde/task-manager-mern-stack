@@ -1,0 +1,214 @@
+/*
+Board Style
+*/
+
+.board-wrapper {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+
+.overlay-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 85;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.board-header {
+    background-color: #fefefe;
+}
+
+.board-title,
+.board-menu {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.board-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+
+.project-name {
+    background-color: #f8f8f8;
+}
+
+.project-name h4 {
+    padding: 15px;
+    font-size: 1.25em;
+    font-family: 'Buda Light';
+    font-weight: bold;
+}
+
+.board-menu nav {}
+
+.board-menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.board-menu ul li {
+    padding: 0 10px;
+    font-size: 0.75em;
+}
+
+
+.board {
+    min-width: 100%;
+    overflow-x: auto;
+    min-height: 100%;
+    position: relative;
+}
+
+.list-container {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/*
+Create a list Form
+*/
+
+.list-create-form-container {
+    position: relative;
+}
+
+.list-create-form-container .create-list-button {
+    width: 100%;
+    text-align: left;
+}
+
+.list,
+.list-create-form-container {
+    margin: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-list-button {
+    position: relative;
+}
+
+.create-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    padding: 3px;
+    background-color: #eee;
+    z-index: 5;
+}
+
+.list,
+.create-list-form-container,
+.create-list {
+
+    box-shadow: 2px 2px 2px -2px #777,
+    -1px -1px 3px -2px#777;
+}
+
+.create-list input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 6px;
+    font-size: 0.75em;
+    color: #222;
+}
+
+.create-list .list-button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.create-list .list-button-group {
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+.create-list .list-button-group button:nth-child(2) {
+    background-color: transparent;
+    margin-left: 3px;
+}
+
+
+/*
+Edit a list Form
+*/
+
+.edit-list {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.edit-list input[type="text"] {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 0.75em;
+    color: #222;
+}
+
+.edit-list input[type="text"]:focus {
+    outline: 1px solid #88bbd6;
+}
+
+
+/*
+List Style
+*/
+
+.list {
+    background-color: #eee;
+}
+
+.list .list-name-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list .list-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.75em;
+    color: #222;
+}
+
+.list-name h4 {
+    width: 90%;
+    font-weight: bold;
+    margin: 0 auto;
+    margin: 3px 0;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.list-name .delete-list-button-container {
+    width: 17px;
+    margin: 0 2px;
+    position: relative;
+}
+
+.list-name .delete-list-button {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    height: 0;
+    padding: 0;
+    padding-bottom: 100%;
+    background-color: transparent;
+    background-image: url('../img/delete-list.svg');
+}

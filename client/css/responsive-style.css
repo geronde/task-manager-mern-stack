@@ -1,0 +1,44 @@
+@media screen and (max-width:1024px) {
+    /*
+Lists
+*/
+    .board {
+        overflow-x: visible;
+    }
+
+    .list-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+    /*
+About
+*/
+    .about-wrapper {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 100%);
+        grid-template-areas: "header" "aside" "main";
+        font-size: 1em;
+    }
+    .about-wrapper header {
+        order: 1;
+    }
+    .about-main {
+        grid-row-start: 5;
+       /* autoprefixer: off */
+        grid-row-end: 6;
+      /* autoprefixer: off */
+
+    }
+    .status {
+        border: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        padding: 0;
+    }
+    .support {
+        line-height: 20px;
+    }
+}

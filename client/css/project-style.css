@@ -1,0 +1,158 @@
+.projects-wrapper {
+    margin: 0 auto;
+}
+
+.projects {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h3 {
+    padding: 25px 10px 15px 10px;
+    font-size: 1.5em;
+}
+
+.project-list {
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-pod {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-form {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+}
+
+.project-info,
+.edit-form input[type="text"] {
+    padding: 10px;
+}
+
+.project-info h4 {
+    font-size: 1em;
+    cursor: pointer;
+    color: #222;
+    padding: 5px 0;
+}
+
+.project-info small {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+.project-options,
+.edit-form div {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px 0;
+}
+
+.edit-project-wrapper,
+.remove-project-wrapper {
+    width: 30px;
+    margin: 0 2px;
+}
+
+.edit-project,
+.remove-project {
+    width: 100%;
+    background-size: contain;
+    height: 0;
+    padding: 0;
+    /* reset */
+    padding-bottom: 100%;
+    background-color: transparent;
+}
+
+.project-options .edit-project {
+    background-image: url('../img/edit.svg');
+}
+
+.project-options .remove-project {
+    background-image: url('../img/delete.svg');
+}
+
+.edit-project:hover,
+.remove-project:hover {
+    opacity: 0.5
+}
+
+
+/*
+Forms
+*/
+
+.create-button-container {}
+
+.create-project-button {
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.create-form-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: 1px 5px 3px #eee;
+}
+
+.create-form {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-form input[type="text"] {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid darkgray;
+    padding: 5px 0;
+    margin: 2.5px;
+    width: 100%;
+}
+
+.create-form input[type="text"]:focus {
+    outline: none;
+}
+
+.create-form div {
+    padding: 10px 0;
+}
+
+.create-form button {
+    margin: 10px 2px;
+    padding: 2px;
+}
+
+.edit-form {
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+.edit-form label {
+    padding: 10px;
+}
+
+.edit-project div {
+    padding: 1rem;
+    background-color: pink;
+}
+
+.edit-form button {
+    margin: 0 5px;
+}

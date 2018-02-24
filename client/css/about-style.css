@@ -1,0 +1,152 @@
+.about-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: "header header header" "main main aside"
+}
+
+.board-header {
+    grid-area: header;
+}
+
+.about-main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 0.9em;
+}
+
+.about-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2em 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about-main ul li {
+    background-color: #eee;
+    margin: 0.25rem;
+    padding: 5px 20px;
+    border-radius: 3px 0 0 3px;
+    color: #222;
+    line-height: 26px;
+    position: relative;
+    transition: color 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+.about-main ul li:before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    height: 6px;
+    width: 6px;
+    top: 50%;
+    margin-top: -3px;
+    left: 5px;
+    position: absolute;
+    content: "";
+}
+
+.about-main ul li:hover {
+    background-color: #88bbd6;
+    color: white;
+    cursor: pointer;
+}
+
+.about-main ul li:hover::after {
+    border-left-color: crimson;
+}
+
+.support {
+    padding: 2em 0;
+}
+.support p {
+    padding: 15px 0;
+    margin: 10px 0;
+}
+.support p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.status {
+    position: relative;
+    grid-area: aside;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid #cdcdcd;
+}
+
+.status ul {
+    position: relative;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: 0.75em;
+}
+
+.status ul li {
+    padding: 3px 4px;
+    color: #fefefe;
+}
+
+.status ul li:first-child {
+    border-right: 1px solid #eee;
+    background-color: #222;
+}
+
+.status .status-tag li:nth-of-type(3) {
+    position: relative;
+    width: 25px;
+}
+
+.status .status-tag li:nth-of-type(3) i {
+    position: absolute;
+    width: 80%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 0;
+    padding: 0px;
+    padding-bottom: 70%;
+    background-color: transparent;
+    background-image: url('../img/progress.svg');
+}
+
+.status .github-repo-tag li:nth-of-type(1) {
+    position: relative;
+    width: 25px;
+}
+
+.status .github-repo-tag li:nth-of-type(1) i {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 0;
+    padding: 0px;
+    padding-bottom: 100%;
+    background-color: transparent;
+    background-image: url('../img/github.svg');
+}
+
+.status-tag li:nth-of-type(2),
+.status-tag li:nth-of-type(3) {
+    background-color: #88bbd6;
+}
+
+.github-repo-tag li:nth-of-type(2) {
+    background-color: #cdcdcd;
+}
